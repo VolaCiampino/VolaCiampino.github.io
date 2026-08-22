@@ -1,0 +1,33 @@
+---
+layout: base.html
+title: Foto
+---
+
+<div style="
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  ">
+  <div style="
+    width: min(90%, 40rem);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 2rem;
+    ">
+
+    {%- for page in menu -%}
+    {%- if page.name === "Media" -%}
+      {%- for subpage in page.submenu -%}
+      {%- if subpage.name === "Foto" %}
+        {% for foto in subpage.submenu -%}
+          <a href="{{ foto.path }}"><button>{{ foto.name }}</button></a>
+        {% endfor -%}
+      {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {% endfor %}
+
+  </div>
+</div>

@@ -1,0 +1,186 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "Competitiva",
+    "path": "/competitiva",
+    "submenu": [
+      {
+        "name": "Regolamento",
+        "path": "/competitiva/regolamento"
+      },
+      {
+        "name": "Percorso",
+        "path": "/competitiva/percorso"
+      },
+      {
+        "name": "Premi",
+        "path": "/competitiva/premi",
+        "submenu": [
+          {
+            "name": "Assoluti",
+            "path": "/competitiva/premi/assoluti"
+          },
+          {
+            "name": "Categorie",
+            "path": "/competitiva/premi/categorie"
+          },
+          {
+            "name": "Società",
+            "path": "/competitiva/premi/societa"
+          }
+        ]
+      },
+      {
+        "name": "La Vola Ciampino",
+        "path": "/competitiva/"
+      },
+      {
+        "name": "Classifiche",
+        "path": "/competitiva/classifiche",
+        "submenu": [
+          {
+            "name": "Classifica 2026",
+            "path": "https://www.endu.net/en/events/vola-ciampino-2/results/2026"
+          },
+          {
+            "name": "Classifica 2025",
+            "path": "https://www.endu.net/en/events/vola-ciampino-2/results/2025"
+          },
+          {
+            "name": "Classifica 2024",
+            "path": "https://www.endu.net/en/events/vola-ciampino-2/results/2024"
+          },
+          {
+            "name": "Classifica 2023",
+            "path": "https://www.endu.net/en/events/vola-ciampino-2/results/2023"
+          },
+          {
+            "name": "Classifica 2019",
+            "path": "/competitiva/classifiche/2019"
+          },
+          {
+            "name": "Classifica 2018",
+            "path": "/competitiva/classifiche/2018"
+          },
+          {
+            "name": "Classifica 2017",
+            "path": "/competitiva/classifiche/2017"
+          },
+          {
+            "name": "Classifica 2016",
+            "path": "/competitiva/classifiche/2016"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Iscrizioni",
+    "path": "/iscrizioni",
+    "submenu": [
+      {
+        "name": "9,9 KM",
+        "path": "/iscrizioni/10km",
+        "submenu": [
+          {
+            "name": "Ritiro Pettorali e Pacco Gara",
+            "path": "/iscrizioni/10km/ritiro"
+          },
+          {
+            "name": "Iscrizioni",
+            "path": "/iscrizioni/10km"
+          }
+        ]
+      },
+      {
+        "name": "2 KM",
+        "path": "/stracittadina"
+      }
+    ]
+  },
+  {
+    "name": "Media",
+    "path": "/media",
+    "submenu": [
+      {
+        "name": "Foto",
+        "path": "/media/foto",
+        "submenu": [
+          {
+            "name": "Foto 2026",
+            "path": "/media/foto/2026"
+          },
+          {
+            "name": "Foto 2025",
+            "path": "/media/foto/2025"
+          },
+          {
+            "name": "Foto 2024",
+            "path": "/media/foto/2024"
+          },
+          {
+            "name": "Foto 2019",
+            "path": "/media/foto/2019"
+          },
+          {
+            "name": "Foto 2018",
+            "path": "/media/foto/2018"
+          },
+          {
+            "name": "Foto 2017",
+            "path": "/media/foto/2017"
+          },
+          {
+            "name": "Foto 2016",
+            "path": "/media/foto/2016"
+          },
+          {
+            "name": "Foto 2015",
+            "path": "/media/foto/2015"
+          },
+          {
+            "name": "Foto 2014",
+            "path": "/media/foto/2014"
+          },
+          {
+            "name": "Amici a 4 Zampe",
+            "path": "/media/foto/amici-a-4-zampe"
+          }
+        ]
+      },
+      {
+        "name": "Video",
+        "path": "/media/video"
+      }
+    ]
+  },
+  {
+    "name": "Sponsor",
+    "path": "/sponsor"
+  },
+  {
+    "name": "Stracittadina",
+    "path": "/stracittadina",
+    "submenu": [
+      {
+        "name": "Regolamento",
+        "path": "/stracittadina"
+      },
+      {
+        "name": "Percorso",
+        "path": "/stracittadina/percorso"
+      },
+      {
+        "name": "Premi",
+        "path": "/stracittadina/premi"
+      }
+    ]
+  },
+  {
+    "name": "Contatti",
+    "path": "/contatti"
+  }
+]

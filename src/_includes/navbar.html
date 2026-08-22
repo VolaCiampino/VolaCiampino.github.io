@@ -1,0 +1,56 @@
+<nav>
+  <span class="current-page-label">
+    {{ title }}
+  </span>
+
+  <input type="checkbox" id="sidebar-active" />
+  <label for="sidebar-active" class="open-sidebar-button">
+    {% include "svg/menu.svg" %}
+  </label>
+  <label for="sidebar-active" id="overlay"></label>
+
+  <ul class="menu">
+    <label for="sidebar-active" class="close-sidebar-button">
+      {% include "svg/close.svg" %}
+    </label>
+
+    {%- for item in menu %}
+    {% if not item.submenu %}
+    <li><a href="{{ item.path }}">{{ item.name }}</a></li>  
+    
+    {%- else -%}
+    <li class="dropdown-menu">
+      <input type="checkbox" class="submenu-toggle" id="toggle-{{ item.name | replace: ' ', '-' | downcase }}" />
+      <div class="dropdown-head">
+        <a href="{{ item.path }}">{{ item.name }}</a>
+        <label for="toggle-{{ item.name | replace: ' ', '-' | downcase }}">{% include "svg/arrow_down.svg" %}</label>
+      </div>
+
+      <ul class="dropdown-list">
+        {%- for subitem in item.submenu %}
+        {%- if not subitem.submenu %}
+        <li><a href="{{ subitem.path }}">{{ subitem.name }}</a></li>
+
+        {%- else %}
+        <li class="dropdown-menu">
+          <input type="checkbox" class="submenu-toggle" id="toggle-{{ item.name | append: '-' | append: subitem.name | replace: ' ', '-' | downcase }}" />
+          <div class="dropdown-head">
+            <a href="{{ subitem.path }}">{{ subitem.name }} {% include "svg/arrow_right.svg" %}</a>
+            <label for="toggle-{{ item.name | append: '-' | append: subitem.name | replace: ' ', '-' | downcase }}">{% include "svg/arrow_down.svg" %}</label>
+          </div>
+
+          <ul class="dropdown-list">
+          {% for subsubitem in subitem.submenu -%}
+            <li><a href="{{ subsubitem.path }}">{{ subsubitem.name }}</a></li>
+          {% endfor -%}
+          </ul>
+        </li>
+        {%- endif %}
+        {%- endfor %}
+      </ul>
+    </li>
+    {% endif %}
+    {%- endfor %}
+
+  </ul>
+</nav>

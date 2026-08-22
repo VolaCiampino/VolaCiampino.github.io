@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Dem Supermercati",
+    "logo": "/img/logo/logo_dem.jpg",
+    "url": "https://www.supermercatidem.com"
+  },
+  {
+    "name": "AET",
+    "logo": "/img/logo/logo_aet.jpg",
+    "url": "https://www.ambiente-spa.com"
+  },
+  {
+    "name": "Giulius",
+    "logo": "/img/logo/logo_giulius.jpg",
+    "url": "https://www.giuliuspetshop.it"
+  },
+  {
+    "name": "BCC Roma",
+    "logo": "/img/logo/logo_bccroma.webp",
+    "url": "https://www.bccroma.it"
+  },
+  {
+    "name": "Martella Caffè",
+    "logo": "/img/logo/logo_martellacaffe.jpg",
+    "url": "https://www.caffemartella.com"
+  },
+  {
+    "name": "A.S.8 Antincendio e Sicurezza",
+    "logo": "/img/logo/logo_as8.jpg",
+    "url": "http://www.antincendio8.it"
+  },
+  {
+    "name": "Bar Pasticceria Rinaldi",
+    "logo": "/img/logo/logo_rinaldi.jpg",
+    "url": "https://pasticceriarinaldi.it/site"
+  },
+  {
+    "name": "Yoga",
+    "logo": "/img/logo/logo_yoga.png",
+    "url": "https://www.succhiyoga.it"
+  },
+  {
+    "name": "LBM Sport",
+    "logo": "/img/logo/logo_lbm.jpg",
+    "url": "https://www.lbmsport.it"
+  },
+  {
+    "name": "Acqua S. Maria alle Capannelle",
+    "logo": "/img/logo/logo_acqua_capannelle.jpg",
+    "url": "https://www.acquacapannelle.it"
+  },
+  {
+    "name": "H-One Lab",
+    "logo": "/img/logo/logo_h-one_lab.jpg",
+    "url": "https://www.honelab.it"
+  },
+  {
+    "name": "Medasport",
+    "logo": "/img/logo/logo_medasport.png",
+    "url": "https://medasport.it"
+  },
+  {
+    "name": "Rome AirportBus by Schiaffini",
+    "logo": "/img/logo/logo_rome_airportbus.png",
+    "url": "https://romeairportbus.it"
+  },
+  {
+    "name": "Grossi Immobiliare",
+    "logo": "/img/logo/logo_grossi_immobiliare.jpg",
+    "url": "http://www.agenziagrossiimmobiliareciampino.it/"
+  }
+]

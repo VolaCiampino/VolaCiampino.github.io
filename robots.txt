@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /media/foto/2026
+Disallow: /media/foto/2025
+Disallow: /media/foto/2024
+Disallow: /media/foto/2019
+Disallow: /media/foto/2018
+Disallow: /media/foto/2017
+Disallow: /media/foto/2016
+Disallow: /media/foto/2015
+Disallow: /media/foto/2014

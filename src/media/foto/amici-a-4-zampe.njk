@@ -1,0 +1,45 @@
+---
+layout: base.html
+title: Foto Amici a 4 Zampe
+---
+
+<div style="
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  ">
+  <div style="
+    width: min(90%, 35rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    ">
+
+    <img src="/../foto/amici4zampe/pulsante_cane.jpg" alt="" style="width: auto; height: 200px;" />
+    {% for sponsor in sponsors %}
+    {% if sponsor.name == "Giulius" %}
+    <a href="{{sponsor.url}}" target="_blank">
+      <img src="{{sponsor.logo}}" alt="" width="300" />
+    </a>
+    {% endif %}
+    {% endfor %}
+    {# <img src="/../foto/amici4zampe/zampa.jpg" alt="" style="width: auto; height: 200px;" /> #}
+
+    <a href="/foto/amici4zampe/1.jpg">
+      <img src="/../foto/amici4zampe/1.jpg" alt="" style="width: auto; height: 200px;" />
+    </a>
+    <a href="/foto/amici4zampe/2.jpg">
+      <img src="/../foto/amici4zampe/2.jpg" alt="" style="width: auto; height: 200px;" />
+    </a>
+    <a href="/foto/amici4zampe/3.jpg">
+      <img src="/../foto/amici4zampe/3.jpg" alt="" style="width: auto; height: 200px;" />
+    </a>
+    <a href="/foto/amici4zampe/4.jpg">
+      <img src="/../foto/amici4zampe/4.jpg" alt="" style="width: auto; height: 200px;" />
+    </a>
+
+  </div>
+</div>
