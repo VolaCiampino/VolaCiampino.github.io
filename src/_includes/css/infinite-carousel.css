@@ -1,0 +1,51 @@
+.infinite-carousel {
+  width: 90%;
+  margin: 20px auto 100px auto;
+
+  display: flex;
+  overflow-x: hidden;
+
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-composite: destination-in;
+
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  mask-composite: intersect;
+}
+
+.infinite-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.infinite-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 2em;
+  padding-right: 2em;
+
+  animation: spin 60s infinite linear;
+}
+
+.infinite-card {
+  max-width: 200px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+
+  align-content: center;
+  border-radius: .2em;
+  text-align: center;
+  font-size: 3rem;
+}
+
+@keyframes spin {
+  from {translate: 0;}
+  to {translate: -100%;}
+}
+

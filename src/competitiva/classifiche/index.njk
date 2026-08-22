@@ -1,0 +1,33 @@
+---
+layout: base.html
+title: Classifiche Competitiva
+---
+
+<div style="
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  ">
+  <div style="
+    width: min(90%, 50rem);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 2rem;
+    ">
+
+    {%- for page in menu -%}
+    {%- if page.name === "Competitiva" -%}
+      {%- for subpage in page.submenu -%}
+      {%- if subpage.name === "Classifiche" %}
+        {% for classifica in subpage.submenu -%}
+          <a href="{{ classifica.path }}"><button>{{ classifica.name }}</button></a>
+        {% endfor -%}
+      {%- endif -%}
+      {%- endfor -%}
+    {%- endif -%}
+    {% endfor %}
+
+  </div>
+</div>

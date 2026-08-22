@@ -1,0 +1,12 @@
+---
+layout: base.html
+title: Sponsor
+---
+
+<div style="display: flex; justify-content: center; padding: 2rem 0;">
+  <div class="item-grid" style="width: min(100rem, 90%);">
+    {% for sponsor in sponsors -%}
+    <a href="{{ sponsor.url }}" target="_blank"><img class="item" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" width="300" /></a>
+    {% endfor -%}
+  </div>
+</div>

@@ -1,0 +1,71 @@
+---
+layout: base.html
+title: Home
+---
+
+<div style="
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  ">
+
+  <div class="sticky-carousel" id="carousel">
+    <img src="../foto/2025/13.jpg" alt="partenza 10km" />
+    <img src="../foto/2025/43.jpg" alt="arrivo vincitore uomini" />
+    <img src="../foto/2025/49.jpg" alt="arrivo vincitrice donne" />
+    <img src="/img/stracittadina_uomo.jpg" alt="arrivo vincitore uomini stracittadina" />
+    <img src="/img/stracittadina_donna.jpg" alt="arrivo vincitrice donne stracittadina" />
+  </div>
+  <script>
+    {% include "carousel.js" %}
+  </script>
+
+
+  <h1 style="margin-top: 4rem;">
+    <u>VOLA CIAMPINO 7 MARZO 2027</u>
+  </h1>
+  <h2 style="margin: 0; color: #479c12;">
+    STRACITTADINA PARTENZA ORE 9:30
+  </h2>
+  <h2 style="color: #479c12;">
+    COMPETITIVA PARTENZA ORE 10:15
+  </h2>
+
+  <h1 style="margin-top: 2rem; font-size: 2.5rem;">
+    ISCRIZIONI
+  </h1>
+  <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center;">
+    <a href="/iscrizioni/10km"><img src="/img/10km/home.jpg" alt="iscrizioni 10km" /></a>
+    <a href="/stracittadina"><img src="/img/2km/home.jpg" alt="iscrizioni 2km" /></a>
+  </div>
+  <h1 style="width: min(90%, 55rem)">
+    <i>* Le iscrizioni della gara competitiva si chiuderanno al raggiungimento del numero massimo di 1300 iscritti</i>
+  </h1>
+
+  <div style="width: min(90%, 50rem); display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; margin-top: 3rem;">
+    <img src="/img/citta_ciampino.jpg" alt="" width="250" />
+    <img src="/img/logo_runners.jpg" alt="" width="175" />
+    <img src="/img/fidal_lazio.jpg" alt="" width="250" />
+  </div>
+
+  <div class="infinite-carousel">
+    <div class="infinite-group">
+      {% for sponsor in sponsors -%}
+        <a href="{{ sponsor.url }}" target="_blank">
+          <img class="infinite-card" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" width="200" />
+        </a>
+      {% endfor -%}
+    </div>
+    <div aria-hidden class="infinite-group">
+      {% for sponsor in sponsors -%}
+        <a href="{{ sponsor.url }}" target="_blank">
+          <img class="infinite-card" src="{{ sponsor.logo }}" alt="{{ sponsor.name }}" width="200" />
+        </a>
+      {% endfor -%}
+    </div>
+  </div>
+
+</div>

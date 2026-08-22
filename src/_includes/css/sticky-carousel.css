@@ -1,0 +1,26 @@
+.sticky-carousel {
+  display: flex;
+  overflow-x: hidden;
+  width: min(90%, 45rem);
+
+  margin: 3em auto auto auto;
+  gap: 1em;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.sticky-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.sticky-carousel picture {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
+.sticky-carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
